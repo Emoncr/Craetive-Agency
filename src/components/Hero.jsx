@@ -12,13 +12,13 @@ const Hero = async () => {
     const data = await getData();
     return (
         <section className=" hero_bg pt-36 pb-9">
-            <div className="container mx-auto ">
-                <div className="grid grid-cols-2 items-center">
+            <div >
+                <div className="grid grid-cols-2 items-center container mx-auto ">
                     <div className="content_container">
                         <h1 className="leading-[65px] text-[50px] font-bold font_poppins max-w-[550px] text-left ">
                             Increase Your Customers Loyalty and Satisfaction
                         </h1>
-                        <p className="text-lg font-normal text-black max-w-[472px] text-left">We help businesses like yours earn more customers, standout from competitors,  make more money</p>
+                        <p className="font_anveir text-lg font-normal text-black max-w-[472px] text-left">We help businesses like yours earn more customers, standout from competitors,  make more money</p>
                         <button
                             className="font-poppins font-normal text-lg text-white mt-[50px] bg-brandGreen px-[30px] py-5 rounded-[16px] hover:bg-brandGreen/90 duration-300"
                         >

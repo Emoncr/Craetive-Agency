@@ -1,4 +1,5 @@
 import { Poppins, Plus_Jakarta_Sans } from 'next/font/google'
+import localFont from "next/font/local"
 import './globals.css'
 
 const poppins = Poppins({
@@ -12,6 +13,10 @@ const jakarta_sans = Plus_Jakarta_Sans({
   variable: "--font-jakarta_sans"
 })
 
+const avenir = localFont({
+  src: "../font/Avenir Regular.ttf",
+  variable: "--font-anveir_regular"
+})
 
 
 export const metadata = {
@@ -22,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${jakarta_sans.variable}`}>
+      <body className={`${poppins.variable} ${jakarta_sans.variable} ${avenir.variable}`}>
         {children}
       </body>
     </html>

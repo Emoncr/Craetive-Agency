@@ -12,6 +12,10 @@
 .font_jakarta_sans {
   font-family: var(--font-jakarta_sans);
 }
+.font_anveir{
+  font-family:var(--font-anveir_regular)
+}
+
 /*------------------ End Site Fonts Styles -------------------  */
 
 /*-------------------container styles---------------------------*/
@@ -25,7 +29,7 @@
 }
 
 .sub_heading {
-  @apply text-[30px] font-semibold text-black font-poppins;
+  @apply text-[30px] font-semibold text-black font_poppins;
 }
 
 .item_heading {
