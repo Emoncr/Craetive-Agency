@@ -3,7 +3,6 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 /* ------------------Start Site Fonts Styles------------------- */
 
@@ -14,6 +13,11 @@
   font-family: var(--font-jakarta_sans);
 }
 /*------------------ End Site Fonts Styles -------------------  */
+
+/*-------------------container styles---------------------------*/
+.container {
+  @apply max-w-[1240px] mx-auto;
+}
 
 /*-------------------Starting Headings Styles ---------------------*/
 .heading {
@@ -29,6 +33,13 @@
 }
 
 .tagline_text {
-  @apply text-brandGreen font-poppins text-xl font-medium uppercase;
+  @apply font-poppins text-xl font-medium uppercase text-brandGreen;
 }
 /*-------------------End Headings Styles ---------------------*/
+
+/*============= Hero Section Css ========= */
+.hero_bg {
+  background: linear-gradient(180deg, #d7f5dc 0%, #d7f5dc 100%);
+}
+
+@tailwind utilities;

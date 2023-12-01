@@ -6,6 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    borderRadius: {
+      lg: "10px",
+    },
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
