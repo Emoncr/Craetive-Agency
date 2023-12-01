@@ -1,7 +1,18 @@
-import { Inter } from 'next/font/google'
+import { Poppins, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins"
+})
+const jakarta_sans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-jakarta_sans"
+})
+
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${poppins.variable} ${jakarta_sans.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
