@@ -10,7 +10,7 @@ async function getData() {
 const Hero = async () => {
     const data = await getData();
     return (
-        <h1 className="heading">this is hero</h1>
+        <h1 className="heading ">this is hero</h1>
     );
 };
 

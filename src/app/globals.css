@@ -3,7 +3,7 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
 
 /* ------------------Start Site Fonts Styles------------------- */
 
@@ -29,6 +29,13 @@
 }
 
 .tagline_text {
-  @apply text-brandGreen font-poppins text-xl font-medium uppercase;
+  @apply font-poppins text-xl font-medium uppercase text-brandGreen;
 }
 /*-------------------End Headings Styles ---------------------*/
+
+
+
+
+
+
+@tailwind utilities;

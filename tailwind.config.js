@@ -6,6 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    borderRadius: {
+      lg: "10px",
+    },
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -20,7 +23,7 @@ module.exports = {
       boxShadow: {
         teamShadow: "0px 4.4px 20px -1px rgba(19, 16, 34, 0.05)",
         brandShadow: "0px 4px 30px 0px rgba(0, 0, 0, 0.09)",
-      },
+      }
     },
   },
   plugins: [],
