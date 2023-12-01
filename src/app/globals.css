@@ -1,39 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.skew {
-    display: none;
+/* ------------------Start Site Fonts Styles------------------- */
+
+.font_poppins {
+  font-family: var(--font-poppins);
+}
+.font_jakarta_sans {
+  font-family: var(--font-jakarta_sans);
+}
+/*------------------ End Site Fonts Styles -------------------  */
+
+/*-------------------Starting Headings Styles ---------------------*/
+.heading {
+  @apply text-[40px] font-semibold leading-[51px] font-jakartaSans;
 }
 
-.skewed-top-right .skew-top.mr-for-radius {
-    display: block;
+.sub_heading {
+  @apply text-[30px] font-semibold text-black font-poppins;
 }
 
-.skewed-top-left .skew-top.ml-for-radius {
-    display: block;
+.item_heading {
+  @apply text-2xl font-semibold font-poppins text-black;
 }
 
-.skewed-bottom-right .skew-bottom.mr-for-radius {
-    display: block;
+.tagline_text {
+  @apply text-brandGreen font-poppins text-xl font-medium uppercase;
 }
-
-.skewed-bottom-left .skew-bottom.ml-for-radius {
-    display: block;
-}
-
-.skewed-top-right .radius-for-skewed {
-    border-top-right-radius: 6rem;
-}
-
-.skewed-top-left .radius-for-skewed {
-    border-top-left-radius: 6rem;
-}
-
-.skewed-bottom-right .radius-for-skewed {
-    border-bottom-right-radius: 6rem;
-}
-
-.skewed-bottom-left .radius-for-skewed {
-    border-bottom-left-radius: 6rem;
-}
+/*-------------------End Headings Styles ---------------------*/
