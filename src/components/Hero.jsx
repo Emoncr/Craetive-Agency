@@ -12,8 +12,8 @@ const Hero = async () => {
     const data = await getData();
     return (
         <section className=" hero_bg pt-36 pb-9">
-            <div className="container mx-auto ">
-                <div className="grid grid-cols-2 items-center">
+            <div >
+                <div className="grid grid-cols-2 items-center container mx-auto ">
                     <div className="content_container">
                         <h1 className="leading-[65px] text-[50px] font-bold font_poppins max-w-[550px] text-left ">
                             Increase Your Customers Loyalty and Satisfaction

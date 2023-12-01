@@ -19,6 +19,7 @@ module.exports = {
         greenLite: "#D7F5DC",
         bgGreenLite: "#F0FDF4",
         brandOrange: "#F55F1D",
+        brandsBG: "#F8FFF9",
       },
       boxShadow: {
         teamShadow: "0px 4.4px 20px -1px rgba(19, 16, 34, 0.05)",
