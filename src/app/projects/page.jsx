@@ -1,8 +1,12 @@
-import React from 'react'
+import AllProjects from "@/components/AllProjects"
+import Subscribe from "@/components/Subscribe"
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <>
+      <AllProjects />
+      <Subscribe />
+    </>
   )
 }
 

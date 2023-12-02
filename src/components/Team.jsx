@@ -8,6 +8,7 @@ const Team = () => {
           <p className='tagline_text'>Our Team Member</p>
           <h2 className="sub_heading mt-4 max-w-[500px]">Check our awesome team members</h2>
         </div>
+        
         <div className="team_member flex items-center justify-between gap-8 mt-16">
 
 
