@@ -1,7 +1,7 @@
 const getData = async () => {
   const res = await fetch(process.env.BASE_URL + "/api/StatList");
   if (!res.ok) {
-    throw new Error("WorkList Api Calling Failed")
+    throw new Error("StatList Api Calling Failed")
   }
   return res.json();
 }
