@@ -1,7 +1,9 @@
+"use client"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const SiteNavbar = () => {
-
+    const currentPath = usePathname()
 
     return (
         <div className="container mx-auto absolute   transform left-1/2 -translate-x-1/2 ">
@@ -14,7 +16,7 @@ const SiteNavbar = () => {
                         <li>
                             <Link
                                 href={"/"}
-                                className="p-[10px] text-center text-black font-poppins font-medium capitalize "
+                                className={`${currentPath === "/" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center  font-poppins font-medium capitalize `}
                             >
                                 Home
                             </Link>
@@ -22,7 +24,7 @@ const SiteNavbar = () => {
                         <li>
                             <Link
                                 href={"/team"}
-                                className="p-[10px] text-center text-black font-poppins font-medium capitalize "
+                                className={`${currentPath === "/team" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
                                 Team
                             </Link>
@@ -30,7 +32,7 @@ const SiteNavbar = () => {
                         <li>
                             <Link
                                 href={"/services"}
-                                className="p-[10px] text-center text-black font-poppins font-medium capitalize "
+                                className={`${currentPath === "/services" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
                                 Service
                             </Link>
@@ -38,7 +40,7 @@ const SiteNavbar = () => {
                         <li>
                             <Link
                                 href={"/projects"}
-                                className="p-[10px] text-center text-black font-poppins font-medium capitalize "
+                                className={`${currentPath === "/projects" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
                                 Projects
                             </Link>
@@ -46,7 +48,7 @@ const SiteNavbar = () => {
                         <li>
                             <Link
                                 href={"/testimonials"}
-                                className="p-[10px] text-center text-black font-poppins font-medium capitalize "
+                                className={`${currentPath === "/testimonials" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
                                 Testimonials
                             </Link>

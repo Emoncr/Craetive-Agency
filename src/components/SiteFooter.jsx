@@ -8,7 +8,7 @@ const SiteFooter = () => {
             <div className="container">
                 <div className="footer_items_container flex items-start justify-between">
                     <div className="logo_items">
-                        <img src="/images/logo.png" alt="logo" />
+                        <img className='invert' src="/images/logo.png" alt="logo" />
                         <p className='font_avenir font-normal text-xl text-white max-w-[320px] text-left mt-5'>Some footer text about the  Agency. Just a little description to help people understand you better</p>
                         <div className="social_links flex items-center justify-start gap-4 mt-5">
 
