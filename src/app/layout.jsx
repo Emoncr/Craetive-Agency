@@ -15,7 +15,7 @@ const jakarta_sans = Plus_Jakarta_Sans({
 
 const avenir = localFont({
   src: "../font/Avenir Regular.ttf",
-  variable: "--font-anveir_regular"
+  variable: "--font-avenir_regular"
 })
 
 
