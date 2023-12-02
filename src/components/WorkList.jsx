@@ -17,10 +17,10 @@ const WorkList = () => {
             <h3 className='font-poppins font-semibold text-2xl text-left text-black mt-4'>
               Grow Your Business
             </h3>
-            <p className='font_anveir font-normal text-lg text-black mt-4'>
+            <p className='font_avenir font-normal text-lg text-black mt-4'>
               We help identify the best ways to improve your business
             </p>
-            <button className='font_anveir text-lg font-normal rounded-lg   bg-transparent hover:bg-greenLite  duration-300 px-5 py-[15px] mt-11'>
+            <button className='font_avenir text-lg font-normal rounded-lg   bg-transparent hover:bg-greenLite  duration-300 px-5 py-[15px] mt-11'>
               <span className='flex items-center gap-2'>
                 Learn More
                 <img src="/icons/arrow.png" alt="icon" />
@@ -32,10 +32,10 @@ const WorkList = () => {
             <h3 className='font-poppins font-semibold text-2xl text-left text-black mt-4'>
               Grow Your Business
             </h3>
-            <p className='font_anveir font-normal text-lg text-black mt-4'>
+            <p className='font_avenir font-normal text-lg text-black mt-4'>
               We help identify the best ways to improve your business
             </p>
-            <button className='font_anveir text-lg font-normal rounded-lg   bg-transparent hover:bg-greenLite  duration-300 px-5 py-[15px] mt-11 group'>
+            <button className='font_avenir text-lg font-normal rounded-lg   bg-transparent hover:bg-greenLite  duration-300 px-5 py-[15px] mt-11 group'>
               <span className='flex items-center gap-2'>
                 Learn More
                 <img src="/icons/arrow.png" alt="icon" />
@@ -47,10 +47,10 @@ const WorkList = () => {
             <h3 className='font-poppins font-semibold text-2xl text-left text-black mt-4'>
               Grow Your Business
             </h3>
-            <p className='font_anveir font-normal text-lg text-black mt-4'>
+            <p className='font_avenir font-normal text-lg text-black mt-4'>
               We help identify the best ways to improve your business
             </p>
-            <button className='font_anveir text-lg font-normal rounded-lg   bg-transparent hover:bg-greenLite  duration-300 px-5 py-[15px] mt-11'>
+            <button className='font_avenir text-lg font-normal rounded-lg   bg-transparent hover:bg-greenLite  duration-300 px-5 py-[15px] mt-11'>
               <span className='flex items-center gap-2'>
                 Learn More
                 <img src="/icons/arrow.png" alt="icon" />
