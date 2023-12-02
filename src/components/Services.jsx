@@ -1,6 +1,19 @@
-import React from 'react'
+import Image from "next/image"
 
-const Services = () => {
+const getData = async () => {
+    const res = await fetch(process.env.BASE_URL + "/api/AllService")
+    if (!res.ok) {
+        throw new Error("AllService API Calling Falied!")
+    }
+    return res.json()
+}
+
+const Services = async () => {
+
+    const servicesData = await getData();
+
+
+
     return (
         <section className='pt-16 pb-20'>
             <div className="container">
@@ -12,75 +25,36 @@ const Services = () => {
 
                 <div className="service_card_container grid grid-cols-2 gap-8  mt-[50px]">
 
-                    <div className="service_card bg-white shadow-brandShadow max-w-[604px] rounded-[20px] mx-auto px-9 pt-10 pb-11">
-                        <div className="card_content">
-                            <h4 className='font-poppins font-semibold text-[26px] text-black uppercase'>Build & Launch without problems</h4>
-                            <p className='font-poppins font-normal text-[#9D9D9D] capitalize mt-5'>Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
-                        </div>
-                        <div className="service_images_container mt-14">
-                            <div className="imgaes flex items-center justify-between gap-8">
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/service img 1.png" alt="services image" />
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/services 2.png" alt="services image" />
-                            </div>
-                            <div className="imgaes flex items-center justify-between gap-8 mt-5">
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/service 3.png" alt="services image" />
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/services 4.png" alt="services image" />
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        servicesData.map(service => {
+                            return (
+                                <div key={service.id} className="service_card bg-white cursor-pointer shadow-brandShadow max-w-[604px] rounded-[20px] mx-auto px-9 pt-10 pb-11">
+                                    <div className="card_content">
+                                        <h4 className='font-poppins font-semibold text-[26px] text-black uppercase'>{service.title}</h4>
+                                        <p className='font-poppins font-normal text-[#9D9D9D] capitalize mt-5'>{service.des}</p>
+                                    </div>
+                                    <div className="service_images_container mt-14">
+                                        <div className="imgaes flex items-center justify-between gap-8">
+                                            <img className="shadow-serviceImageShadow rounded-lg w-full h-full object-cover max-w-[358px] max-h-[164px]" src={service.image1} alt="services image" />
+
+                                            <img className="shadow-serviceImageShadow rounded-lg h-[164px]  w-[143px] object-cover" src={service.image2} alt="services image" />
+
+                                        </div>
 
 
-                    <div className="service_card bg-white shadow-brandShadow max-w-[604px] rounded-[20px] mx-auto px-9 pt-10 pb-11">
-                        <div className="card_content">
-                            <h4 className='font-poppins font-semibold text-[26px] text-black uppercase'>Build & Launch without problems</h4>
-                            <p className='font-poppins font-normal text-[#9D9D9D] capitalize mt-5'>Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
-                        </div>
-                        <div className="service_images_container mt-14">
-                            <div className="imgaes flex items-center justify-between gap-8">
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/service img 1.png" alt="services image" />
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/services 2.png" alt="services image" />
-                            </div>
-                            <div className="imgaes flex items-center justify-between gap-8 mt-5">
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/service 3.png" alt="services image" />
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/services 4.png" alt="services image" />
-                            </div>
-                        </div>
-                    </div>
+                                        <div className="imgaes flex items-center justify-between gap-8 mt-5">
 
 
-                    <div className="service_card bg-white shadow-brandShadow max-w-[604px] rounded-[20px] mx-auto px-9 pt-10 pb-11">
-                        <div className="card_content">
-                            <h4 className='font-poppins font-semibold text-[26px] text-black uppercase'>Build & Launch without problems</h4>
-                            <p className='font-poppins font-normal text-[#9D9D9D] capitalize mt-5'>Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
-                        </div>
-                        <div className="service_images_container mt-14">
-                            <div className="imgaes flex items-center justify-between gap-8">
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/service img 1.png" alt="services image" />
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/services 2.png" alt="services image" />
-                            </div>
-                            <div className="imgaes flex items-center justify-between gap-8 mt-5">
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/service 3.png" alt="services image" />
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/services 4.png" alt="services image" />
-                            </div>
-                        </div>
-                    </div>
+                                            <img className="shadow-serviceImageShadow rounded-lg w-[257px] object-cover h-[263px]" src={service.image3} alt="services image" />
 
-                    <div className="service_card bg-white shadow-brandShadow max-w-[604px] rounded-[20px] mx-auto px-9 pt-10 pb-11">
-                        <div className="card_content">
-                            <h4 className='font-poppins font-semibold text-[26px] text-black uppercase'>Build & Launch without problems</h4>
-                            <p className='font-poppins font-normal text-[#9D9D9D] capitalize mt-5'>Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
-                        </div>
-                        <div className="service_images_container mt-14">
-                            <div className="imgaes flex items-center justify-between gap-8">
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/service img 1.png" alt="services image" />
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/services 2.png" alt="services image" />
-                            </div>
-                            <div className="imgaes flex items-center justify-between gap-8 mt-5">
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/service 3.png" alt="services image" />
-                                <img className="shadow-serviceImageShadow rounded-lg" src="/images/services 4.png" alt="services image" />
-                            </div>
-                        </div>
-                    </div>
+
+                                            <img className="shadow-serviceImageShadow rounded-lg w-[257px] object-cover h-[263px]" src={service.image4} alt="services image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
 
 
                 </div>
