@@ -6,11 +6,8 @@ const getData = async () => {
   return res.json()
 }
 
-
-
 const Brand = async () => {
   const imagesData = await getData()
-
 
 
   return (
