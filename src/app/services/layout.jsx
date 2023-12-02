@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
         <main>
             <div className="team_layout pt-48 pb-20 bg-bgGray">
                 <div className="container">
-                    <h1 className='heading'>Team</h1>
+                    <h1 className='heading'>Our Services</h1>
                     <div className="navigation">
                         <nav className="text-[#101A29] font-jakartaSans font-semibold mt-5">
                             <ol className="list-none p-0 inline-flex">
@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
                                     </svg>
                                 </li>
                                 <li className="flex items-center text-brandGreen">
-                                    <Link href={"/"} >Team</Link>
+                                    <Link href={"/"} >Our Services</Link>
                                 </li>
                             </ol>
                         </nav>

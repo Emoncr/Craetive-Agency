@@ -1,9 +1,14 @@
+import Services from '@/components/Services'
+import Subscribe from '@/components/Subscribe'
 import React from 'react'
 
-const Service = () => {
+const ServicePage = () => {
     return (
-        <div>Service</div>
+        <>
+            <Services />
+            <Subscribe />
+        </>
     )
 }
 
-export default Service
+export default ServicePage
