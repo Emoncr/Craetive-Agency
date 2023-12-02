@@ -35,7 +35,6 @@ const AllProjects = async () => {
             )
           }
 
-
         </div>
 
 
