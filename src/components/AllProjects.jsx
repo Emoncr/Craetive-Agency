@@ -1,6 +1,19 @@
-import React from 'react'
+import Link from "next/link"
 
-const AllProjects = () => {
+const getData = async () => {
+  const res = await fetch(process.env.BASE_URL + "/api/AllProject")
+  if (!res.ok) {
+    throw new Error("AllProject API Calling Falied!")
+  }
+  return res.json()
+}
+
+
+
+const AllProjects = async () => {
+  const projects = await getData()
+
+
   return (
     <section className='pt-16 pb-20'>
       <div className="container">
@@ -11,40 +24,17 @@ const AllProjects = () => {
 
         <div className="projects_container grid grid-cols-2 gap-8 mt-12">
 
+          {
+            projects.map(porject =>
+              <Link key={projects.id} href={""}>
+                <div className="project bg-white px-[30px] pt-10 pb-[30px] rounded-[20px] shadow-brandShadow">
+                  <img className='rounded-[20px]' src={porject.image} alt="Projects images" />
+                  <h4 className="font-poppins font-semibold text-[26px] text-black uppercase text-left mt-8">{porject.title}</h4>
+                </div>
+              </Link>
+            )
+          }
 
-          <div className="project bg-white px-[30px] pt-10 pb-[30px] rounded-[20px] shadow-brandShadow">
-            <img className='rounded-[20px]' src="/images/projects.png" alt="Projects images" />
-            <h4 className="font-poppins font-semibold text-[26px] text-black uppercase text-left mt-8">Lorem ipsum dolor sit consectutar</h4>
-          </div>
-
-          <div className="project bg-white px-[30px] pt-10 pb-[30px] rounded-[20px] shadow-brandShadow">
-            <img className='rounded-[20px]' src="/images/projects.png" alt="Projects images" />
-            <h4 className="font-poppins font-semibold text-[26px] text-black uppercase text-left mt-8">Lorem ipsum dolor sit consectutar</h4>
-          </div>
-
-
-          <div className="project bg-white px-[30px] pt-10 pb-[30px] rounded-[20px] shadow-brandShadow">
-            <img className='rounded-[20px]' src="/images/projects.png" alt="Projects images" />
-            <h4 className="font-poppins font-semibold text-[26px] text-black uppercase text-left mt-8">Lorem ipsum dolor sit consectutar</h4>
-          </div>
-
-
-          <div className="project bg-white px-[30px] pt-10 pb-[30px] rounded-[20px] shadow-brandShadow">
-            <img className='rounded-[20px]' src="/images/projects.png" alt="Projects images" />
-            <h4 className="font-poppins font-semibold text-[26px] text-black uppercase text-left mt-8">Lorem ipsum dolor sit consectutar</h4>
-          </div>
-
-
-          <div className="project bg-white px-[30px] pt-10 pb-[30px] rounded-[20px] shadow-brandShadow">
-            <img className='rounded-[20px]' src="/images/projects.png" alt="Projects images" />
-            <h4 className="font-poppins font-semibold text-[26px] text-black uppercase text-left mt-8">Lorem ipsum dolor sit consectutar</h4>
-          </div>
-
-
-          <div className="project bg-white px-[30px] pt-10 pb-[30px] rounded-[20px] shadow-brandShadow">
-            <img className='rounded-[20px]' src="/images/projects.png" alt="Projects images" />
-            <h4 className="font-poppins font-semibold text-[26px] text-black uppercase text-left mt-8">Lorem ipsum dolor sit consectutar</h4>
-          </div>
 
         </div>
 
