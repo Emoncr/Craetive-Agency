@@ -1,6 +1,12 @@
 import { Poppins, Plus_Jakarta_Sans } from 'next/font/google'
 import localFont from "next/font/local"
 import './globals.css'
+import SiteNavbar from '@/components/SiteNavbar'
+import SiteFooter from '@/components/SiteFooter'
+import ProgressbarProvider from '@/components/ProgressbarProvider'
+
+
+
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,7 +34,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${jakarta_sans.variable} ${avenir.variable}`}>
-        {children}
+        <ProgressbarProvider>
+          <SiteNavbar />
+          {children}
+          <SiteFooter />
+        </ProgressbarProvider>
       </body>
     </html>
   )

@@ -21,7 +21,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
-                                href={"/"}
+                                href={"/team"}
                                 className="p-[10px] text-center text-black font-poppins font-medium capitalize "
                             >
                                 Team
@@ -29,7 +29,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
-                                href={"/"}
+                                href={"/services"}
                                 className="p-[10px] text-center text-black font-poppins font-medium capitalize "
                             >
                                 Service
@@ -37,7 +37,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
-                                href={"/"}
+                                href={"/projects"}
                                 className="p-[10px] text-center text-black font-poppins font-medium capitalize "
                             >
                                 Projects
@@ -45,7 +45,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
-                                href={"/"}
+                                href={"/testimonials"}
                                 className="p-[10px] text-center text-black font-poppins font-medium capitalize "
                             >
                                 Testimonials
@@ -54,7 +54,7 @@ const SiteNavbar = () => {
 
                         <li>
                             <Link
-                                href={"/"}
+                                href={""}
                                 className="font-poppins  font-medium text-black py-[10px] px-6 border-brandGreen border rounded-lg hover:border-transparent hover:bg-brandGreen duration-300 hover:text-white"
                             >
                                 Login
@@ -63,7 +63,7 @@ const SiteNavbar = () => {
                         <li>
                             <Link
                                 className="font-poppins  font-medium text-white py-[10px] px-6 bg-brandGreen border border-transparent rounded-lg hover:bg-transparent hover:border-brandGreen duration-300 hover:text-black "
-                                href={"/"}
+                                href={""}
                             >
 
                                 Register
