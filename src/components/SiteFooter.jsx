@@ -6,7 +6,7 @@ const SiteFooter = () => {
     return (
         <section className='bg-black pt-20 pb-8'>
             <div className="container">
-                <div className="footer_items_container flex items-start justify-between">
+                <div className="footer_items_container grid grid-cols-1 md:grid-cols-2 gap-y-10 lg:gap-y-0 lg:flex items-start justify-between">
                     <div className="logo_items">
                         <img  src="/images/logo.png" alt="logo" />
                         <p className='font_avenir font-normal text-xl text-white max-w-[320px] text-left mt-5'>Some footer text about the  Agency. Just a little description to help people understand you better</p>
