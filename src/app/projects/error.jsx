@@ -1,10 +1,13 @@
 "use client"
-const Error = () => {
-    return (
-        <div>
 
-        </div>
-    )
+
+
+const Error = () => {
+  return (
+    <di>
+     
+    </di>
+  )
 }
 
 export default Error

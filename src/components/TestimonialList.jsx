@@ -17,8 +17,8 @@ const TestimonialList = async () => {
         <section className='pt-16 pb-20'>
             <div className="container">
                 <div className="content">
-                    <p className='tagline_text'>Our Team Member</p>
-                    <h2 className="sub_heading mt-4 max-w-[500px]">Check our awesome team members</h2>
+                    <p className='tagline_text'>Testimonial List</p>
+                    <h2 className="sub_heading mt-4 max-w-[500px]">Better Agency/SEO Solution At Your Fingertips</h2>
                 </div>
                 <div className="testimonial_card_container grid grid-cols-3 gap-x-8 gap-y-10 mt-[50px]">
 
