@@ -20,7 +20,7 @@
 
 /*-------------------container styles---------------------------*/
 .container {
-  @apply max-w-[1240px] mx-auto;
+  @apply max-w-[1240px] mx-auto px-6 xl:px-0;
 }
 
 /*-------------------Starting Headings Styles ---------------------*/

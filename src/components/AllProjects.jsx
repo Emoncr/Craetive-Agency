@@ -22,7 +22,7 @@ const AllProjects = async () => {
           <h2 className="sub_heading mt-4 max-w-[500px]">Better Agency/SEO Solution At Your Fingertips</h2>
         </div>
 
-        <div className="projects_container grid grid-cols-2 gap-8 mt-12">
+        <div className="projects_container grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 
           {
             projects.map(porject =>

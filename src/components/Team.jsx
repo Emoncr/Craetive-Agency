@@ -22,7 +22,7 @@ const Team = async () => {
           <h2 className="sub_heading mt-4 max-w-[500px]">Check our awesome team members</h2>
         </div>
 
-        <div className="team_member grid grid-cols-3 items-center justify-between gap-8 mt-16">
+        <div className="team_member grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-8 mt-16">
 
           {
             members.map(member =>

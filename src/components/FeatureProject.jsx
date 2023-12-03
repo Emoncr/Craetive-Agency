@@ -29,11 +29,11 @@ const FeatureProject = async () => {
                 </div>
 
 
-                <div className="grid grid-cols-2 items-start gap-[30px] mt-[70px] projects_container">
-                    <div className="first_project">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-[30px] mt-[70px] projects_container">
+                    <div className="first_project mb-5 lg:mb-0">
                         <div className="porject">
                             <Link href={featureProjects[0].live}  >
-                                <img className="h-[531px] w-full rounded-[20px] object-cover " src={featureProjects[0].image} alt="feature project" />
+                                <img className="lg:h-[531px] w-full rounded-[20px] object-cover " src={featureProjects[0].image} alt="feature project" />
                             </Link>
                             <p className="text-brandSecound/80 font_poppins font-normal text-sm mt-4">App Design - {parseDate(featureProjects[0].updated_at)}</p>
                             <h4 className="text-2xl font-bold font_poppins text-brandSecound mt-[10px]">{featureProjects[0].title}</h4>
