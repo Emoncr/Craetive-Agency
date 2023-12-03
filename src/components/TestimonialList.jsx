@@ -20,12 +20,12 @@ const TestimonialList = async () => {
                     <p className='tagline_text'>Testimonial List</p>
                     <h2 className="sub_heading mt-4 max-w-[500px]">Better Agency/SEO Solution At Your Fingertips</h2>
                 </div>
-                <div className="testimonial_card_container grid grid-cols-3 gap-x-8 gap-y-10 mt-[50px]">
+                <div className="testimonial_card_container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 mt-[50px]">
 
 
                     {
                         tesimonials.map(testimonial =>
-                            <div key={testimonial.id} className="testimonial_card bg-white shadow-brandShadow px-6 py-12 max-w-[392px] rounded-[20px] ">
+                            <div key={testimonial.id} className="testimonial_card bg-white shadow-brandShadow px-6 py-12 max-w-[392px] mx-auto rounded-[20px] ">
                                 <div className="image_container flex items-center justify-center">
                                     <img className='rounded-[20px] w-[100px] h-[100px] object-cover' src={testimonial.image} alt="Testimonial Images" />
                                 </div>
