@@ -29,8 +29,8 @@ const FeatureProject = async () => {
                 </div>
 
 
-                <div className="grid grid-cols-2 items-start gap-[30px] mt-[70px] projects_container">
-                    <div className="first_project">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-[30px] mt-[70px] projects_container">
+                    <div className="first_project mb-5 lg:mb-0">
                         <div className="porject">
                             <Link href={featureProjects[0].live}  >
                                 <img className="h-[531px] w-full rounded-[20px] object-cover " src={featureProjects[0].image} alt="feature project" />
