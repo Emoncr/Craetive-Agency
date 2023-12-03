@@ -27,12 +27,12 @@ const Hero = async () => {
                     </div>
                     <div className='w-full order-first md:order-last lg:px-4'>
                         <div className='flex flex-wrap '>
-                            <img className='w-1/3 lg:w-1/3 h-48 p-2 object-cover rounded-lg' src={image1} alt='hero image' />
-                            <img className='w-2/3 lg:w-2/3 h-48 p-2 object-cover rounded-lg' src={image2} alt='hero image' />
+                            <img className='w-1/3 lg:w-1/3 h-48 sm:h-64 p-2 object-cover rounded-lg' src={image1} alt='hero image' />
+                            <img className='w-2/3 lg:w-2/3 h-48 sm:h-64 p-2 object-cover rounded-lg' src={image2} alt='hero image' />
                         </div>
                         <div className='flex flex-wrap '>
-                            <img className='w-2/3 lg:w-2/3 h-48 p-2 object-cover rounded-lg' src={image3} alt='hero image' />
-                            <img className='w-1/3 lg:w-1/3 h-48 p-2 object-cover rounded-lg' src={image4} alt='hero image' />
+                            <img className='w-2/3 lg:w-2/3 h-48 sm:h-64 p-2 object-cover rounded-lg' src={image3} alt='hero image' />
+                            <img className='w-1/3 lg:w-1/3 h-48 sm:h-64 p-2 object-cover rounded-lg' src={image4} alt='hero image' />
                         </div>
                     </div>
                 </div>

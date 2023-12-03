@@ -12,7 +12,7 @@ const Brand = async () => {
 
   return (
     <div className='py-11 bg-brandsBG'>
-      <div className="flex items-center justify-between  container">
+      <div className="grid grid-cols-2  sm:flex items-center justify-between justify-items-center gap-y-10 container">
         {
           imagesData.map(imageData => <img src={imageData.image} alt={imageData.name} />)
         }

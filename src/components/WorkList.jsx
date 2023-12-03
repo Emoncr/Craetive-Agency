@@ -21,11 +21,11 @@ const WorkList = async () => {
             We provide the Perfect Solution to your business growth
           </h2>
         </div>
-        <div className="grid grid-cols-3 items-center  mt-11 ">
+        <div className="grid md:grid-cols-3 items-center  mt-11 ">
 
           {
             workLists.map(workList =>
-              <div key={workList.step} className='py-[50px] px-[30px] card max-w-[380px] '>
+              <div key={workList.step} className='py-[50px] px-[30px] card md:max-w-[380px] '>
                 <img src="/icons/Heart.png" alt="what we do" />
                 <h3 className='font-poppins font-semibold text-2xl text-left text-black mt-4'>
                   {workList.title}
@@ -42,8 +42,6 @@ const WorkList = async () => {
               </div>
             )
           }
-
-
 
 
         </div>

@@ -9,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 
 const SiteNavbar = () => {
     const currentPath = usePathname()
-    const [mobileActive, setMobileActive] = useState(true)
+    const [mobileActive, setMobileActive] = useState(false)
 
     return (
         <div className="container mx-auto absolute   transform left-1/2 -translate-x-1/2 ">
@@ -94,7 +94,7 @@ const SiteNavbar = () => {
                 </div>
                 <div className="menuBtn">
                     <button className="text-brandGreen text-2xl" onClick={() => setMobileActive(!mobileActive)}>
-                        {mobileActive ? <IoClose className="text-red-700" /> : <IoMenu  />}
+                        {mobileActive ? <IoClose className="text-red-700" /> : <IoMenu />}
                     </button>
                 </div>
                 {
@@ -102,6 +102,7 @@ const SiteNavbar = () => {
                     <ul className="bg-greenLite absolute text-lg top-20 w-full pt-7 pl-8 pb-16 grid grid-cols-1 gap-5 rounded-lg transition-all duration-300 shadow-md shadow-greenLite">
                         <li>
                             <Link
+                                onClick={() => setMobileActive(!mobileActive)}
                                 href={"/"}
                                 className={`${currentPath === "/" ? "text-brandGreen" : "text-black"} p-[10px] text-center  font-poppins font-medium capitalize `}
                             >
@@ -110,6 +111,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
+                            onClick={() => setMobileActive(!mobileActive)}
                                 href={"/team"}
                                 className={`${currentPath === "/team" ? "text-brandGreen " : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
@@ -118,6 +120,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
+                            onClick={() => setMobileActive(!mobileActive)}
                                 href={"/services"}
                                 className={`${currentPath === "/services" ? "text-brandGreen " : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
@@ -126,6 +129,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
+                            onClick={() => setMobileActive(!mobileActive)}
                                 href={"/projects"}
                                 className={`${currentPath === "/projects" ? "text-brandGreen " : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
@@ -134,6 +138,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
+                            onClick={() => setMobileActive(!mobileActive)}
                                 href={"/testimonials"}
                                 className={`${currentPath === "/testimonials" ? "text-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
